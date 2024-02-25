@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #5e5b5b;
+    margin: 0;
+    padding: 0;
+}
+
+.WeatherApp {
+    background: linear-gradient(180deg, #853c3c 0%, #048eff 100%);
+    width: 80%;
+    height: max-content;
+    max-width: 550px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:  10px;
+    padding-top: 16px;
+
+}
+.cityInput{
+    color: #000000;
+    background: rgb(240, 210, 155);
+    display: flex;
+    width: 362px;
+    height: 78px;
+     border: none;
+    outline: none;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 40px;
+   border-radius: 40px;
+}
+.search_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e4deaf;
+    cursor: pointer;
+    width: 68px;
+    height: 68px;
+border-radius: 50%;
+
+}
+
+.weather_image{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+.weather_temp{
+    display: flex;
+    justify-content: center;
+    color: azure;
+    font-size: 120px;
+    font-weight: 400;
+}
+.weather_location{
+    display: flex;
+    justify-content: center;
+    color: azure;
+    font-size: 60px;
+    font-weight: 400;
+}
+.data-container{
+    margin-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color: azure;
+}
+.element{
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.data{
+    font-size: 34px;
+    font-weight: 400;
+}
+.text{
+    font-size: 20px;
+    font-weight: 400;
+}
+.icon{
+    margin-top: 10px;
+}
+
+@media (max-width: 544px) {
+    .WeatherApp {
+        width: 80%;
+        height: 80%;
+    }
+
+    .top_bar {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .cityInput {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+
+    }
+
+    .search_icon {
+        margin: auto;
+    }
+
+    .weather_temp {
+        font-size: 80px;
+    }
+
+    .weather_location {
+        font-size: 40px;
+    }
+
+    .data-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
